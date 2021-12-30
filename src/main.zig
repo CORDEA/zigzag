@@ -1,7 +1,7 @@
 const std = @import("std");
 
 pub fn main() anyerror!void {
-    std.log.info("All your codebase are belong to us.", .{});
+    try @import("file_io/main.zig").run();
 }
 
 test "basic test" {
